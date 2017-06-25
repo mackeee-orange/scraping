@@ -1,0 +1,1 @@
+$ python /Users/masanari/dev/src/github.com/Waddles1729/wget_train/bitle_scraping/aichi/scrape_by_bs4_aishi.py | grep -e '/li' -e 'class="dd03"' | sed 's/,/、/g' | sed 's/<[^>]*>//g' | sed 's/ //g' | sed 's/\[//' | sed 's/\]//' | sed '/^$/d' | paste -d , - - - - >> scrape_by_bs4_aichi.csv
